@@ -113,4 +113,67 @@ Dot notation preferred when you know the 'property name' at the time of developm
 
 ## Exercise Seven
 
+let contact = {
+    name: "Hunny Habibi",
+    phone: "0223723494",
+    email: "darcy.conder@gmail.com",
+    isFavourite: true
+};
+
+console.log(`Call ${contact.name} on ${contact.phone}`);
+
+This is exactly how you render functions when building websites. For Example I use `Service due for ${vehicle.rego}` in my car tracker app, I'm building.
+
+## Exercise Eight
+
+Create two transport objects (e.g. `bus` and `uber`), each with a `name` and `cost` property. Then write an `if` statement that logs which option is cheaper.
+
+let bus = {
+    name: "bus",
+    cost: 3
+};
+
+let uber = {
+    name: "uber",
+    cost: 25
+};
+
+if (bus.cost , uber.cost) {
+    console.log(`${bus.name} is cheaper`);
+} else {
+    console.log(`${uber.name} is cheaper`);
+}
+
+This is comparing object properties and the if/else statements will execute which one will be cheaper, and log it as such.
+
+## Exercise Nine
+
+This code has **3 bugs**. Find and fix them all.
+
+```js
+let book = [
+  title: "The Hobbit"
+  author = "Tolkien",
+  pages: 310
+];
+
+console.log(book.Title);
+```
+
+ERRORS:
+
+Wrong brackets, should've been {}
+Missing comma after the book title value was given.
+Missing colon after author
+Capital letter on Title will call nothing as it is case sensitive.
+
+FIXED:
+
+let book = {
+    title: "The Hobbit",
+    author: "Tolkien",
+    pages: 310
+};
+
+console.log(book.title);
 
