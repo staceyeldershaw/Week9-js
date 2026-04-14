@@ -90,3 +90,27 @@ player.title = "Knight";
 
 console.log(player);
 
+The dot.notation takes the object name (player) and the related data (.level) and usees that to find the right part to modify.
+
+## Exercise Six
+
+Using the `car` object below, access `model` using dot notation and `year` using bracket notation. Print both with `console.log`.
+
+```js
+let car = {
+  model: "Kia Rio",
+  year: 1995,
+  isNice: false
+};
+```
+
+console.log(car.model); //dot notation
+console.log(car["year"]); // bracket notation.
+
+Dot notation preferred when you know the 'property name' at the time of development.Bracket is when property is dynamic, user-inputted or contains special characters. Bracket notation evaluates the variables. Bracket notation can use special characters like hyphens and spaces.Bracket notation is more flexible, allowing string expressions or variables to be evaluated, whereas dot notation expects direct identifiers.
+
+## Part Three
+
+## Exercise Seven
+
+
