@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3 — Read and change the DOM</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 0 20px;
+      background: #f5f5f5;
+    }
+    h2 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #333; }
+    p { font-size: 0.9rem; color: #666; margin-bottom: 1.5rem; }
+    .label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #aaa;
+      margin-bottom: 6px;
+    }
+    .box {
+      background: white;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #999;
+      min-height: 48px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Task 3 — Read and change the DOM</h2>
+  <p>When your JavaScript is working, the grey boxes below will update.</p>
+
+  <div class="label">Greeting</div>
+  <div id="greeting" class="box">waiting for JavaScript...</div>
+
+  <div class="label">Score</div>
+  <div id="score" class="box">waiting for JavaScript...</div>
+
+  <div class="label">Status</div>
+  <div id="status" class="box">waiting for JavaScript...</div>
+
+  <script>
+
+    // ============================================================
+    // JS 104 Practical Test — Task 3
+    // Name: ___________________________
+    // ============================================================
+    // IMPORTANT:
+    //   - The greeting must include YOUR actual name.
+    //   - The status must be a real one-word feeling (how you actually feel right now).
+    // ============================================================
+
+
+    // STEP 1
+    // TODO: Write a // comment explaining what getElementById does,
+    // then use it to find the div with id "greeting" and store it in a variable.
+
+
+
+
+    // STEP 2
+    // TODO: Write a // comment explaining what innerText = does,
+    // then change the greeting div's innerText to say hello to yourself.
+    // Example: "Kia ora, [your name]!"
+
+
+
+
+    // STEP 3
+    // TODO: Find the div with id "score" using getElementById,
+    // then change its innerText to any number you choose.
+
+
+
+
+    // STEP 4
+    // TODO: Find the div with id "status" using getElementById,
+    // then change its innerText to one word describing how you feel right now.
+
+    const greetingDiv = document.getElementById("greeting"); // This line uses the getElementById method to find the div element with the id "greeting" and stores it in the variable `greetingDiv`.
+    greetingDiv.innerText = "Kia ora, Stacey!"; // This line sets the innerText property of the `greetingDiv` element to the string "Kia ora, Stacey!", which will update the text content of that div on the webpage.
+    const scoreDiv = document.getElementById("score"); // This line uses the getElementById method to find the div element with the id "score" and stores it in the variable `scoreDiv`.
+    scoreDiv.innerText = "100%"; // This line sets the innerText property of the `scoreDiv` element to the string "100%", which will update the text content of that div on the webpage.
+    const statusDiv = document.getElementById("status"); // This line uses the getElementById method to find the div element with the id "status" and stores it in the variable `statusDiv`.
+    statusDiv.innerText = "Overwhelmed"; // This line sets the innerText property of the `statusDiv` element to  the string "Overwhelmed", which will update the text content of that div on the webpage  to reflect how you are feeling right now.
+  </script>
+</body>
+</html>
